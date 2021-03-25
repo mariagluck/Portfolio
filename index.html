@@ -5,26 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maria Glück Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script
+      src="https://kit.fontawesome.com/05a6b04c02.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <h1>title here</h1>
-    </header>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Works</li>
-        <li>Skills</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <main>
-    main stuff goes header
-    <section>
-        Works
-    </section>
+      <!-- starts nav -->
+      <nav
+        class="navbar navbar-expand-lg sticky-top bg-none" style="color: #f9ae65;">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#portfolionav"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="portfolionav"
+        >
+          <ul class="nav">
+            <li class="nav-item display-4">
+              <a class="nav-link pr-4" href="#aboutme">
+                About Me
+              </a>
+            </li>
+            <li class="nav-item display-4">
+              <a class="nav-link pr-4" href="#skills">
+                My kills
+              </a>
+            </li>
+            <li class="nav-item display-4">
+              <a class="nav-link pr-4" href="#works"> Works </a>
+            </li>
+            <li class="nav-item display-4">
+              <a class="nav-link pr-4" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ends nav -->
 
+      <!-- name introduction animation -->
+      <div class="animated-name">
+        <div class="name">
+          <div>
+            <span>Maria </span>
+            <span>Glück</span>
+          </div>
+        </div>
+
+        <div class="web-dev">
+          <div>Web Developer</div>
+        </div>
+      </div>
+      <!-- ball animation -->
+      <div class="ball"></div>
+      <div class="ball2"></div>
+
+      <!-- arrow scroll-down -->
+      <div class="arrow bounce">
+        <a class="fa fa-arrow-down fa-2x" style="color: #f9ae65;" href="#aboutme"></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-me" id="aboutme">
+        <h2 class="display-2 text-center pt-4">Hi!</h2>
+
+        <img
+          class="rounded-circle mx-auto d-block my-4"
+          alt="100x100"
+          src="./images/Maria_Gluck_Portfolio_pic.jpg"
+          data-holder-rendered="true"/>
+          <div class="paragraph">
+          <p class="font-weight-bold text-center aboutme">about me.</p> 
+          
+          <p class="mb-0 mt-4 p-4 text-left">
+          
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          adipisci sapiente corrupti qui ullam error atque consequatur sint!
+          Suscipit doloremque iure ea est a minima non deserunt aut quas! Vel
+          recusandae, ab magnam explicabo corporis blanditiis voluptates dicta
+          vero voluptatem totam eos, accusamus velit? Eos sit ipsum fugit
+          corporis, suscipit amet vitae maxime velit voluptas, adipisci facilis
+          debitis harum! Quo, nisi.
+        </p>
+    </div>
+    <div class="down bounce pb-4">
+        <a class="fa fa-arrow-down fa-2x" style="color: primary;" href="#skills"></a>
+      </div>
+      </section>
+
+      <section class="skills" id="skills">
+        
+        <!-- <div class="container"> -->
+           <div class="left">
+            <h2 class="display-2 text-center pt-4">my Skills.</h2>
+            <p class="font-weight-light">things I do</p>   
+        </div>
+           <div class="right">
+
+            <div class="card-deck">
+                <div class="card bg-transparent border-0">
+                    <i class="far fa-object-group display-3 pb-4"></i>
+                  <div class="card-body">
+                    <h5 class="card-title ui">UI / UX</h5>
+                    <hr style="width:50%" size="1" color=white">
+                    <p class="card-text mt-3 p-4">Adobe XD</p>
+                    <p class="card-text mt-3 p-4">Figma</p>
+                    <p class="card-text mt-3 p-4">Wordpress</p>
+                    <p class="card-text mt-3 p-4">Shopify</p>
+                    
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <i class="fas fa-code display-3 pb-4"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">WEB DEVELOPMENT</h5>
+                    <hr style="width:50%" size="1" color=white">
+                    <p class="card-text mt-3 p-4">Html</p>
+                    <p class="card-text mt-3 p-4">CSS</p>
+                    <p class="card-text mt-3 p-4">SCSS</p>
+                    <p class="card-text mt-3 p-4">BOOTSTRAP</p>
+                  </div>
+                </div>
+                <div class="card bg-transparent border-0">
+                    <i class="fas fa-palette display-3 pb-4"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">PRODUCT DESIGN</h5>
+                    <hr style="width:50%" size="1" color=white">
+                    <p class="card-text mt-3 p-4">Photoshop</p>
+                    <p class="card-text mt-3 p-4">Illustrator</p>
+                    <p class="card-text mt-3 p-4">Indesign</p>
+                    <p class="card-text mt-3 p-4">Animations</p>
+                  </div>
+                </div>
+               
+              </div>
+           </div>
+      </section>
+
+
+      <section class="works" id="works">
+       
+        <div class="top">
+            <h2 class="display-2 text-center align-middle">my Works.</h2>  
+        </div>
+        <div class="bottom">
+            <h2 class="display-3 text-center"><a href="./works.html">have a look.</a></h2>
+        </div>
+      </section>
     </main>
+
+    <footer id="contact">
+        <h2 class="display-4 text-center align-middle">contact.</h2>
+       <a href="mailto:hello@thisismyemail.com"><h3 class="text-center align-middle">LETS KEEP IN TOUCH</h3></a> 
+       <div class="links"><a href="https://github.com/mariagluck"><i class="fab fa-github pr-4"></i></a>
+        <a href="https://www.linkedin.com/in/maria-martinez-santos"><i class="fab fa-linkedin-in pl-4"></i></a> 
+    </div>
+   </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
   </body>
 </html>

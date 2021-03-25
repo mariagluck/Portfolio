@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.animated-name {
+  color: #f9ae65;
+  font-family:  'Montserrat', sans-serif;
+  height: 60vh;
+  width: 60vw;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.animated-name > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 70%;
+}
+
+.animated-name .name {
+  font-size: 6em;
+  padding: 5px;
+  position: absolute;
+  border-bottom: 6px solid #f9ae65;
+  top: 0;
+}
+.animated-name span {
+  display: block;
+}
+
+.animated-name .name div {
+  animation: NameUp 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+@keyframes NameUp {
+
+    0% { transform: translate3d(0, 100%, 0); }
+
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+
+    100% { transform: translate3d(0, 0, 0); }
+}
+
+.animated-name .web-dev {
+  font-size: 5em;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.animated-name .web-dev div {
+  animation: WebDevDown 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+@keyframes WebDevDown {
+    0% { transform: translate3d(0, -100%, 0); }
+    
+    100% { transform: translate3d(0, 0, 0); }
+}
+
+/* bouncing ball */
+.ball {
+height: 200px;
+width: 200px;
+background-color: #47a96f;
+animation: 
+  pulse 3s ease infinite alternate, 
+  nudge 5s linear infinite alternate;
+animation-delay: 3s;
+border-radius: 100%;
+position: absolute;
+top: 65%;
+}
+
+.ball2 {
+  height: 100px;
+  width: 100px;
+  background-color: #b596ac;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+  animation-delay: 6s;
+  border-radius: 100%;
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  }
+
+@keyframes pulse {
+0%, 100% {
+  background-color: #fa755b;
+}
+50% {
+  background-color: #f9ae65;
+}
+}
+
+@keyframes nudge {
+0%, 100% {
+  transform: translate(0, 0);
+}
+
+50% {
+  transform: translate(150px, 0);
+}
+
+80% {
+  transform: translate(-150px, 0);
+}
+}
+
+
+/* arrow down to scroll */
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+}
+.bounce {
+  animation: bounce 10s infinite;
+  animation: bounce 10s infinite;
+  animation: bounce 10s infinite;
+  animation-delay: 8s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+header .fa-arrow-down:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.zoom {
+  transition: transform .2s; 
+  width: 550px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
+
+@media screen and (min-width: 768px) 
+and (max-width: 1024px) {
+  
+  .animated-name {
+    color: #f9ae65;
+    font-family:  'Montserrat', sans-serif;
+    height: 40vh;
+    width: 80vw;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);  
+  }
+  
+  
+  .animated-name .name {
+    font-size: 4em;
+    padding: 5px;
+    position: absolute;
+    border-bottom: 6px solid #f9ae65;
+    top: 0;
+  }
+
+  .animated-name .web-dev {
+    font-size: 3em;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); 
+    animation-play-state: paused;
+  }
+
+} 
+
+@media screen and (max-width: 768px) {
+  
+  .animated-name {
+    color: #f9ae65;
+    font-family:  'Montserrat', sans-serif;
+    height: 40vh;
+    width: 80vw;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);  
+  }
+  
+  
+  .animated-name .name {
+    font-size: 2.5em;
+    padding: 5px;
+    position: absolute;
+    border-bottom: 3px solid #f9ae65;
+    top: 0;
+  }
+  .animated-name .web-dev {
+    font-size: 2em;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+
+} 
+

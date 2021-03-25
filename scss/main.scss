@@ -1,1 +1,708 @@
-`@import "../node_modules/bootstrap/scss/bootstrap";
+// Custom.scss
+
+/** MAIN THEME */
+$background: #f9ae65;
+$on-background: #ffffff;
+$primary: #3c6d79;
+
+/** SECONDARY THEME */
+$sec-background: #ffd196 ;
+$on-secbackground: #47a96f;
+
+/** SECONDARY THEME */
+$tres-background: #5e62d1;
+$on-tresbackground: #5fecc8;
+
+/** EXTRAS THEME */
+$ext-background: #ebebf3;
+$on-extbackground: #fa7c64;
+$secondary: #b596ac;
+
+
+// $display1-size:  3.5rem;
+// $display2-size:  3rem;
+// $display3-size:  2.5rem;
+$display4-size:  1.7rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+}
+
+nav {
+    width: 90vw;
+    
+
+    ul {
+        justify-content: right;
+        padding-top: 30px;
+    }
+
+    a {
+        color: $background !important;
+        font-weight: bold;
+    }
+
+    a:hover,  
+    .nav-item:hover {
+        color: $background !important;
+        border-bottom: 3px solid $background;
+    }
+    
+    h1 {
+  color: $primary;
+  }
+}
+
+.about-me {
+    height: 100vh;
+    width: 100vw;
+    background: $background;
+    // color: $on-secbackground;
+    font-family: 'Montserrat', sans-serif;
+    
+    img {
+        border: solid 6px $on-background;
+    }
+    h2 {
+        font-size: 85px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300px;
+        line-height: 40px;
+        width: 90%;
+        margin: auto;
+        color: rgba(0, 0, 0, 0.767);
+    }
+
+    .paragraph {
+        background: $on-background;
+        width: 60%;
+        margin: auto;
+        padding: 40px;
+        border-radius: 12px;
+    }
+    .aboutme {
+        font-size: 1.8em;
+        color: initial;
+        text-align: center;
+    }
+    .down {
+        text-align: center;
+        margin: 8% 0;
+        position: absolute;
+        top: 180%;
+        left: 70%;
+      }
+   
+}
+
+
+.skills {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+    .left {
+        height: 100vh;
+        width: 30vw;
+        background: $tres-background;
+        color: $on-tresbackground;
+        
+        h2 {
+
+           margin-top: 64%;
+       }
+        p {
+
+           font-size: 1.4em;
+           font-weight: lighter;
+           color: white;
+           text-align: center;
+           margin-top: 50%;
+        }
+    
+    }
+    .right {
+        height: 100vh;
+        width: 70vw;
+        color: $tres-background;
+        background: $on-tresbackground;
+      
+        .card {
+            height: 100px;
+            width: 90%;
+            text-align: center;
+            margin-top: 20%;
+            margin-left: 20px;
+        }
+        .card-body {
+            height: 200px;
+        }
+    }
+     
+}
+
+
+.works {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+
+    h2 {
+        padding-top: 10%;
+    }
+    .top {
+        height: 50vh;
+        width: 100vw;
+        background: $background;
+        color: $primary;
+    }
+
+    .bottom {
+        height: 50vh;
+        width: 100vw;
+        background: $primary;
+        color: $background;
+       
+        a {
+            color: $background;
+            border-bottom: solid 6px $background;
+        }
+        
+        a:hover {
+            color: $background;
+            border-top: solid 6px $background;
+            border-bottom: none;
+            outline-color: 0 !important;
+        }
+    }
+
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 20vh;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: auto;
+        font-size: 2.5em;
+    }
+}
+
+
+.portfolio {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: $on-extbackground !important;
+
+    a {
+        color: initial !important;
+    }
+
+    a:hover {
+        color: $tres-background !important;
+        border: none;
+        // border-bottom: 3px solid white;
+    }
+
+    h2 {
+        padding-top: 5%;
+    }
+    h3 {
+        font-size: 3.5em;
+        padding: 30px;
+    }
+
+    .top {
+        height: 30vh;
+        width: 100vw;
+        background: $on-extbackground;
+        color: $ext-background;
+    }
+    .bottom {
+        height: 100vh;
+        width: 100vw;
+        background: white;
+    }
+    .container {
+        height: 32vh;
+        width: 100vw;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+       
+        .box {
+            padding: 20px;
+            padding-top: 20px;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 35%;
+            font-size: 1.5em;
+        }
+        .b1 {
+            background: $tres-background;
+            
+            h3 {color: $on-tresbackground;}
+            a {text-decoration: none;}   
+        }
+
+        .b1:hover {
+            background: $primary;
+            
+            h3 {color: $on-extbackground};
+        }
+
+        .b2 {
+            background: $on-tresbackground;
+            
+            h3 {color: $tres-background;}
+            a {text-decoration: none;}  
+        }
+
+        .b2:hover {
+            background: $background;
+
+            h3 {color: $white};
+        }
+
+        .b4 {
+            background: $background;
+
+            h3 {color: $primary;}
+            a {text-decoration: none;}   
+        }
+
+        .b4:hover {
+            background: $on-tresbackground;
+
+            h3 {color: $primary};
+        }
+
+        .b3 {
+            background: $primary;
+
+            h3 {color: $background;}
+            a {text-decoration: none;}      
+        }
+
+        .b3:hover {
+            background: $tres-background;
+
+            h3 {color: $white};
+        }
+    }
+
+}
+
+
+.project1 {
+    height: 100vh;
+    width: 100vw;
+    background: $sec-background;
+    .container {
+        font-family: 'Montserrat', sans-serif; 
+        height: 70vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+         
+    }
+}
+
+.project2 {
+    height: 100vh;
+    width: 100vw;
+    background: $primary;
+    color: white !important;
+    .container {
+        font-family: 'Montserrat', sans-serif; 
+        height: 70vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+         
+    }
+}
+
+.project3 {
+    height: 100vh;
+    width: 100vw;
+    background: $tres-background;
+    color: $on-tresbackground;
+    .container {
+        font-family: 'Montserrat', sans-serif; 
+        height: 70vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+         
+    }
+}
+
+.project4 {
+    height: 100vh;
+    width: 100vw;
+    background: $background;
+    color: $primary;
+    .container {
+        font-family: 'Montserrat', sans-serif; 
+        height: 70vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+         
+    }
+}
+
+.scrolls {
+    display: flex;
+    justify-content: center;
+    height: 10px;
+}
+
+@media screen and (min-width: 768px) 
+and (max-width: 1024px) {
+    .about-me {
+        
+        .paragraph {
+            background: $on-background;
+            width: 90%;
+            margin: auto;
+            padding: 40px;
+            border-radius: 12px;
+        }   
+    }
+
+    .skills {
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+        .left {
+            height: 30vh;
+            width: 100vw;
+            background: $tres-background;
+            color: $on-tresbackground;
+            
+            h2 {
+               margin-top: 20%;
+           }
+        
+        }
+        .right {
+            height: 70vh;
+            width: 100vw;
+            padding: 20px;
+            color: $tres-background;
+            background: $on-tresbackground;
+            display: flex;
+            flex-direction: row;
+          
+            .ui::after {
+            content: " / DESIGN ELEMENTS"; 
+            }
+        }
+         
+    }
+
+    .portfolio {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        h2 {
+            padding-top: 5%;
+        }
+        h3 {
+            font-size: 3.5em;
+            padding: 30px;
+        }
+
+        .container {
+            height: 32vh;
+            width: 100vw;
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    
+    }
+    
+    
+    .project1 {
+        height: 180vh;
+        width: 100vw;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project2 {
+        height: 180vh;
+        width: 100vw;
+        background: $primary;
+        color: white !important;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project3 {
+        height: 180vh;
+        width: 100vw;
+        background: $tres-background;
+        color: $on-tresbackground;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project4 {
+        height: 180vh;
+        width: 100vw;
+        background: $background;
+        color: $primary;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        height: 150vh;
+        width: 100vw;
+        
+        img {
+           width: 130px;
+        }
+        h2 {
+            font-size: 50px;
+        }
+    
+        p {
+            font-size: 14px;
+            width: 100%;
+        }
+    
+        .paragraph {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        .down {
+            display: none;
+          }
+       
+    }
+
+    .skills {
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        height: 200vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+        .left {
+            height: 30vh;
+            width: 100vw;
+            background: $tres-background;
+            color: $on-tresbackground;
+            
+            h2 {
+               margin-top: 10%;
+               font-size: 3em !important;
+           }
+        
+        }
+        .right {
+            height: 1000vh;
+            width: 100vw;
+            padding: 20px;
+            color: $tres-background;
+            background: $on-tresbackground;
+            display: inline-block;
+            padding-bottom: 10px; 
+        }
+    }
+
+
+    .portfolio {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        h2 {
+            padding-top: 5%;
+        }
+        h3 {
+            font-size: 3.5em;
+            padding: 30px;
+        }
+
+        .container {
+            height: 32vh;
+            width: 100vw;
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    
+    }
+    
+    
+    .project1 {
+        height: 180vh;
+        width: 100vw;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project2 {
+        height: 180vh;
+        width: 100vw;
+        background: $primary;
+        color: white !important;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project3 {
+        height: 180vh;
+        width: 100vw;
+        background: $tres-background;
+        color: $on-tresbackground;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+    
+    .project4 {
+        height: 180vh;
+        width: 100vw;
+        background: $background;
+        color: $primary;
+        .container {
+            font-family: 'Montserrat', sans-serif; 
+            height: 150vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2em;
+             
+        }
+    }
+
+    .works {
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20%;
+        }
+    }
+}

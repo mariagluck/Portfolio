@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/main-style.css">
+  <link rel="stylesheet" href="./CSS/contact-style.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+        <li><a href="collection.html">COLLECTION</a></li>
+        <li><a href="toys.html">TOYS</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a id="active" href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="clearfix">
+
+    <div>
+      <h1>Contact us!</h1>
+      <img href src="../img/fox_1.png" 
+           height=150 
+           width=auto 
+           alt="fox" 
+           onmouseover="this.src='../img/fox_2.png'"
+           onmouseout="this.src='../img/fox_1.png'">
+    </div>
+    <form>
+      <div> 
+        <label for="fname">NAME</label>
+         <input type="text" 
+                id="fname" 
+                name="fname" 
+                required 
+                maxlength="100">
+      </div>
+      <div>
+        <label for="lname">SURNAME</label>
+        <input type="text" 
+               id="lname" 
+               name="lname" 
+               required 
+               maxlength="100">
+      </div>
+      <div>
+        <label for="e-mail">E-MAIL </label>
+        <input type="text" 
+               name="eMail" 
+               id="e-mail" 
+               required 
+               maxlength="100">
+      </div>
+      <!-- </div> -->
+      <div>
+        <div>
+          <label for="messageUs">MESSAGE US...</label>
+          <textarea name="messageUs" 
+                    id="messageUs" 
+                    required 
+                    cols="50" 
+                    rows="4" 
+                    maxlength="500"
+                    placeholder="Hi!...">
+          </textarea>
+        </div>
+      </div>
+    </form>
+    <div>
+      <input type="submit" 
+             value="SEND" />
+    </div>
+  </main>
+</body>
+
+</html>

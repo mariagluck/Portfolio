@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box
+}
+body {
+  margin:0px;  
+}
+h1 { 
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Amatic SC';  
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 70px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.centerDiv {
+ padding-top: 30px;
+}
