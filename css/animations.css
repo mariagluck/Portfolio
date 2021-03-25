@@ -170,8 +170,9 @@ and (max-width: 1024px) {
   .animated-name {
     color: #f9ae65;
     font-family:  'Montserrat', sans-serif;
-    height: 40vh;
-    width: 80vw;
+    font-size: 1.6em;
+    /* height: 40vh; */
+    /* width: 80vw; */
     left: 50%;
     position: absolute;
     top: 40%;
@@ -227,6 +228,11 @@ and (max-width: 1024px) {
     padding: 10px;
     position: absolute;
     bottom: 0;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5); 
+    animation-play-state: paused;
   }
 
 } 

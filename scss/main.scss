@@ -118,14 +118,14 @@ nav {
 .skills {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
-    height: 100vh;
+    min-height: auto;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     
     .left {
-        height: 100vh;
+        // min-height: 100vh;
         width: 30vw;
         background: $tres-background;
         color: $on-tresbackground;
@@ -145,20 +145,20 @@ nav {
     
     }
     .right {
-        height: 100vh;
+        min-height: auto;
         width: 70vw;
         color: $tres-background;
         background: $on-tresbackground;
       
         .card {
-            height: 100px;
+            // height: 100px;
             width: 90%;
             text-align: center;
             margin-top: 20%;
             margin-left: 20px;
         }
         .card-body {
-            height: 200px;
+            // height: 200px;
         }
     }
      
@@ -221,6 +221,8 @@ footer {
     }
 }
 
+
+// style external portfolio page works.html
 
 .portfolio {
     font-family: 'Montserrat', sans-serif;
@@ -403,39 +405,45 @@ footer {
 
 @media screen and (min-width: 768px) 
 and (max-width: 1024px) {
-    .about-me {
+
+        .about-me {
+        max-height: auto;
+
+        img {
+            width: 180px;
+         }
+
+        h2 { font-size: 4em !important;}
         
         .paragraph {
-            background: $on-background;
-            width: 90%;
+            height: 600px;
             margin: auto;
             padding: 40px;
             border-radius: 12px;
+        }
+        p {
+            width: 80%;
         }   
     }
 
     .skills {
         font-family: 'Montserrat', sans-serif;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         
         .left {
-            height: 30vh;
+            // min-height: 30vh;
             width: 100vw;
             background: $tres-background;
             color: $on-tresbackground;
             
-            h2 {
-               margin-top: 20%;
-           }
-        
         }
         .right {
-            height: 70vh;
+            // min-height: 70vh;
             width: 100vw;
             padding: 20px;
             color: $tres-background;
@@ -447,8 +455,50 @@ and (max-width: 1024px) {
             content: " / DESIGN ELEMENTS"; 
             }
         }
+
+        .works {
+            font-family: 'Montserrat', sans-serif;
+            width: 100vw;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        
+        
+            h2 {
+                padding-top: 10%;
+            }
+            .top {
+                min-height: 50vh;
+                width: 100vw;
+                background: $background;
+                color: $primary;
+            }
+        
+            .bottom {
+                min-height: 50vh;
+                width: 100vw;
+                background: $primary;
+                color: $background;
+               
+                a {
+                    color: $background;
+                    border-bottom: solid 6px $background;
+                }
+                
+                a:hover {
+                    color: $background;
+                    border-top: solid 6px $background;
+                    border-bottom: none;
+                    outline-color: 0 !important;
+                }
+            }
+        
+        }
+        
          
     }
+// style portfolio page works.html
+
 
     .portfolio {
         width: 100%;
@@ -546,8 +596,9 @@ and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
-    .about-me {
-        height: 150vh;
+    
+       .about-me {
+        // height: 150vh;
         width: 100vw;
         
         img {
@@ -577,14 +628,14 @@ and (max-width: 1024px) {
     .skills {
         font-family: 'Montserrat', sans-serif;
         width: 100vw;
-        height: 200vh;
+        min-height: auto;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         
         .left {
-            height: 30vh;
+            min-height: auto;
             width: 100vw;
             background: $tres-background;
             color: $on-tresbackground;
@@ -596,7 +647,7 @@ and (max-width: 1024px) {
         
         }
         .right {
-            height: 1000vh;
+            // min-height: auto;
             width: 100vw;
             padding: 20px;
             color: $tres-background;
@@ -606,97 +657,103 @@ and (max-width: 1024px) {
         }
     }
 
-
+//   style portfolio works page
     .portfolio {
-        width: 100%;
-        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        // height: auto;
         margin: 0;
         padding: 0;
+        background: $on-extbackground !important;
 
         h2 {
-            padding-top: 5%;
+            font-size: 2.5em !important;
+        }
+    
+        h2 {
+            padding-top: 0;
         }
         h3 {
             font-size: 3.5em;
             padding: 30px;
         }
-
-        .container {
-            height: 32vh;
+    
+        .top {
+            min-height: 200px;
             width: 100vw;
+        }
+       
+        .container {
+            min-height: auto;
+            width: 80vw;
             background: white;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            display: block;
+            
+           
+            .box {
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                padding-top: 20px;
+            }
+            h3 {
+                text-align: center;
+                margin-top: 35%;
+                font-size: 1.2em;
+            }
+            .b1 {
+                background: $tres-background;
+                
+                h3 {color: $on-tresbackground;}
+                a {text-decoration: none;}   
+            }
+    
+            .b1:hover {
+                background: $primary;
+                
+                h3 {color: $on-extbackground};
+            }
+    
+            .b2 {
+                background: $on-tresbackground;
+                
+                h3 {color: $tres-background;}
+                a {text-decoration: none;}  
+            }
+    
+            .b2:hover {
+                background: $background;
+    
+                h3 {color: $white};
+            }
+    
+            .b4 {
+                background: $background;
+    
+                h3 {color: $primary;}
+                a {text-decoration: none;}   
+            }
+    
+            .b4:hover {
+                background: $on-tresbackground;
+    
+                h3 {color: $primary};
+            }
+    
+            .b3 {
+                background: $primary;
+    
+                h3 {color: $background;}
+                a {text-decoration: none;}      
+            }
+    
+            .b3:hover {
+                background: $tres-background;
+    
+                h3 {color: $white};
+            }
         }
     
-    }
-    
-    
-    .project1 {
-        height: 180vh;
-        width: 100vw;
-        .container {
-            font-family: 'Montserrat', sans-serif; 
-            height: 150vh;
-            width: 100vw;
-            display: grid;
-            grid-template-columns: 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 2em;
-             
-        }
-    }
-    
-    .project2 {
-        height: 180vh;
-        width: 100vw;
-        background: $primary;
-        color: white !important;
-        .container {
-            font-family: 'Montserrat', sans-serif; 
-            height: 150vh;
-            width: 100vw;
-            display: grid;
-            grid-template-columns: 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 2em;
-             
-        }
-    }
-    
-    .project3 {
-        height: 180vh;
-        width: 100vw;
-        background: $tres-background;
-        color: $on-tresbackground;
-        .container {
-            font-family: 'Montserrat', sans-serif; 
-            height: 150vh;
-            width: 100vw;
-            display: grid;
-            grid-template-columns: 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 2em;
-             
-        }
-    }
-    
-    .project4 {
-        height: 180vh;
-        width: 100vw;
-        background: $background;
-        color: $primary;
-        .container {
-            font-family: 'Montserrat', sans-serif; 
-            height: 150vh;
-            width: 100vw;
-            display: grid;
-            grid-template-columns: 2fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            gap: 2em;
-             
-        }
     }
 
     .works {

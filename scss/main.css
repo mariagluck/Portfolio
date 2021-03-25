@@ -10012,14 +10012,13 @@ nav h1 {
 .skills {
   font-family: "Montserrat", sans-serif;
   width: 100vw;
-  height: 100vh;
+  min-height: auto;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
 }
 .skills .left {
-  height: 100vh;
   width: 30vw;
   background: #5e62d1;
   color: #5fecc8;
@@ -10035,22 +10034,17 @@ nav h1 {
   margin-top: 50%;
 }
 .skills .right {
-  height: 100vh;
+  min-height: auto;
   width: 70vw;
   color: #5e62d1;
   background: #5fecc8;
 }
 .skills .right .card {
-  height: 100px;
   width: 90%;
   text-align: center;
   margin-top: 20%;
   margin-left: 20px;
 }
-.skills .right .card-body {
-  height: 200px;
-}
-
 .works {
   font-family: "Montserrat", sans-serif;
   width: 100vw;
@@ -10276,34 +10270,39 @@ footer a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-me {
+    max-height: auto;
+  }
+  .about-me img {
+    width: 180px;
+  }
+  .about-me h2 {
+    font-size: 4em !important;
+  }
   .about-me .paragraph {
-    background: #ffffff;
-    width: 90%;
+    height: 600px;
     margin: auto;
     padding: 40px;
     border-radius: 12px;
+  }
+  .about-me p {
+    width: 80%;
   }
 
   .skills {
     font-family: "Montserrat", sans-serif;
     width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
   }
   .skills .left {
-    height: 30vh;
     width: 100vw;
     background: #5e62d1;
     color: #5fecc8;
   }
-  .skills .left h2 {
-    margin-top: 20%;
-  }
   .skills .right {
-    height: 70vh;
     width: 100vw;
     padding: 20px;
     color: #5e62d1;
@@ -10313,6 +10312,38 @@ footer a {
   }
   .skills .right .ui::after {
     content: " / DESIGN ELEMENTS";
+  }
+  .skills .works {
+    font-family: "Montserrat", sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .skills .works h2 {
+    padding-top: 10%;
+  }
+  .skills .works .top {
+    min-height: 50vh;
+    width: 100vw;
+    background: #f9ae65;
+    color: #3c6d79;
+  }
+  .skills .works .bottom {
+    min-height: 50vh;
+    width: 100vw;
+    background: #3c6d79;
+    color: #f9ae65;
+  }
+  .skills .works .bottom a {
+    color: #f9ae65;
+    border-bottom: solid 6px #f9ae65;
+  }
+  .skills .works .bottom a:hover {
+    color: #f9ae65;
+    border-top: solid 6px #f9ae65;
+    border-bottom: none;
+    outline-color: 0 !important;
   }
 
   .portfolio {
@@ -10401,7 +10432,6 @@ footer a {
 }
 @media screen and (max-width: 768px) {
   .about-me {
-    height: 150vh;
     width: 100vw;
   }
   .about-me img {
@@ -10426,14 +10456,14 @@ footer a {
   .skills {
     font-family: "Montserrat", sans-serif;
     width: 100vw;
-    height: 200vh;
+    min-height: auto;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
   }
   .skills .left {
-    height: 30vh;
+    min-height: auto;
     width: 100vw;
     background: #5e62d1;
     color: #5fecc8;
@@ -10443,7 +10473,6 @@ footer a {
     font-size: 3em !important;
   }
   .skills .right {
-    height: 1000vh;
     width: 100vw;
     padding: 20px;
     color: #5e62d1;
@@ -10453,87 +10482,102 @@ footer a {
   }
 
   .portfolio {
-    width: 100%;
-    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    width: 100vw;
     margin: 0;
     padding: 0;
+    background: #fa7c64 !important;
   }
   .portfolio h2 {
-    padding-top: 5%;
+    font-size: 2.5em !important;
+  }
+  .portfolio h2 {
+    padding-top: 0;
   }
   .portfolio h3 {
     font-size: 3.5em;
     padding: 30px;
   }
+  .portfolio .top {
+    min-height: 200px;
+    width: 100vw;
+  }
   .portfolio .container {
-    height: 32vh;
-    width: 100vw;
+    min-height: auto;
+    width: 80vw;
     background: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: block;
   }
-
-  .project1 {
-    height: 180vh;
-    width: 100vw;
+  .portfolio .container .box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    padding-top: 20px;
   }
-  .project1 .container {
-    font-family: "Montserrat", sans-serif;
-    height: 150vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+  .portfolio .container h3 {
+    text-align: center;
+    margin-top: 35%;
+    font-size: 1.2em;
   }
-
-  .project2 {
-    height: 180vh;
-    width: 100vw;
-    background: #3c6d79;
-    color: white !important;
-  }
-  .project2 .container {
-    font-family: "Montserrat", sans-serif;
-    height: 150vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2em;
-  }
-
-  .project3 {
-    height: 180vh;
-    width: 100vw;
+  .portfolio .container .b1 {
     background: #5e62d1;
+  }
+  .portfolio .container .b1 h3 {
     color: #5fecc8;
   }
-  .project3 .container {
-    font-family: "Montserrat", sans-serif;
-    height: 150vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+  .portfolio .container .b1 a {
+    text-decoration: none;
   }
-
-  .project4 {
-    height: 180vh;
-    width: 100vw;
+  .portfolio .container .b1:hover {
+    background: #3c6d79;
+  }
+  .portfolio .container .b1:hover h3 {
+    color: #fa7c64;
+  }
+  .portfolio .container .b2 {
+    background: #5fecc8;
+  }
+  .portfolio .container .b2 h3 {
+    color: #5e62d1;
+  }
+  .portfolio .container .b2 a {
+    text-decoration: none;
+  }
+  .portfolio .container .b2:hover {
     background: #f9ae65;
+  }
+  .portfolio .container .b2:hover h3 {
+    color: #fff;
+  }
+  .portfolio .container .b4 {
+    background: #f9ae65;
+  }
+  .portfolio .container .b4 h3 {
     color: #3c6d79;
   }
-  .project4 .container {
-    font-family: "Montserrat", sans-serif;
-    height: 150vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2em;
+  .portfolio .container .b4 a {
+    text-decoration: none;
+  }
+  .portfolio .container .b4:hover {
+    background: #5fecc8;
+  }
+  .portfolio .container .b4:hover h3 {
+    color: #3c6d79;
+  }
+  .portfolio .container .b3 {
+    background: #3c6d79;
+  }
+  .portfolio .container .b3 h3 {
+    color: #f9ae65;
+  }
+  .portfolio .container .b3 a {
+    text-decoration: none;
+  }
+  .portfolio .container .b3:hover {
+    background: #5e62d1;
+  }
+  .portfolio .container .b3:hover h3 {
+    color: #fff;
   }
 
   .works h2 {
