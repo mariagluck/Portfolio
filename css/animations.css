@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+/* Name animation   */
 .animated-name {
   color: #f9ae65;
   font-family:  'Montserrat', sans-serif;
@@ -68,7 +69,7 @@
     100% { transform: translate3d(0, 0, 0); }
 }
 
-/* bouncing ball */
+/* bouncing and touching balls animation*/
 .ball {
 height: 200px;
 width: 200px;
@@ -152,6 +153,7 @@ header .fa-arrow-down:hover {
   border-bottom: 2px solid white;
 }
 
+/* zoom and scale up image animation */
 .zoom {
   transition: transform .2s; 
   width: 550px;
@@ -163,23 +165,20 @@ header .fa-arrow-down:hover {
   transform: scale(1.5); 
 }
 
-
+/* Style for tablet */
 @media screen and (min-width: 768px) 
 and (max-width: 1024px) {
-  
+  /* name animation */
   .animated-name {
     color: #f9ae65;
     font-family:  'Montserrat', sans-serif;
     font-size: 1.6em;
-    /* height: 40vh; */
-    /* width: 80vw; */
     left: 50%;
     position: absolute;
     top: 40%;
     transform: translate(-50%, -50%);  
   }
-  
-  
+
   .animated-name .name {
     font-size: 4em;
     padding: 5px;
@@ -194,7 +193,7 @@ and (max-width: 1024px) {
     position: absolute;
     bottom: 0;
   }
-  
+  /* Pause animation scale for tablets */
   .zoom:hover {
     transform: scale(1.5); 
     animation-play-state: paused;
@@ -202,8 +201,10 @@ and (max-width: 1024px) {
 
 } 
 
+/* style for phones */
 @media screen and (max-width: 768px) {
   
+  /* name animation */
   .animated-name {
     color: #f9ae65;
     font-family:  'Montserrat', sans-serif;
@@ -214,8 +215,7 @@ and (max-width: 1024px) {
     top: 30%;
     transform: translate(-50%, -50%);  
   }
-  
-  
+
   .animated-name .name {
     font-size: 2.5em;
     padding: 5px;
@@ -223,13 +223,14 @@ and (max-width: 1024px) {
     border-bottom: 3px solid #f9ae65;
     top: 0;
   }
+
   .animated-name .web-dev {
     font-size: 2em;
     padding: 10px;
     position: absolute;
     bottom: 0;
   }
-
+/* stop animation scale for phones */
   .zoom:hover {
     transform: scale(1.5); 
     animation-play-state: paused;

@@ -18,10 +18,7 @@ $ext-background: #ebebf3;
 $on-extbackground: #fa7c64;
 $secondary: #b596ac;
 
-
-// $display1-size:  3.5rem;
-// $display2-size:  3rem;
-// $display3-size:  2.5rem;
+// Custom display style
 $display4-size:  1.7rem;
 
 
@@ -68,11 +65,11 @@ nav {
   }
 }
 
+// Section about me
 .about-me {
     height: 100vh;
     width: 100vw;
     background: $background;
-    // color: $on-secbackground;
     font-family: 'Montserrat', sans-serif;
     
     img {
@@ -114,7 +111,7 @@ nav {
    
 }
 
-
+// section skills
 .skills {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -125,7 +122,6 @@ nav {
     flex-direction: row;
     
     .left {
-        // min-height: 100vh;
         width: 30vw;
         background: $tres-background;
         color: $on-tresbackground;
@@ -151,20 +147,16 @@ nav {
         background: $on-tresbackground;
       
         .card {
-            // height: 100px;
             width: 90%;
             text-align: center;
             margin-top: 20%;
             margin-left: 20px;
         }
-        .card-body {
-            // height: 200px;
-        }
     }
      
 }
 
-
+// section works
 .works {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -203,7 +195,7 @@ nav {
     }
 
 }
-
+// section contact/footer
 footer {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -223,7 +215,7 @@ footer {
 
 
 // style external portfolio page works.html
-
+// style works header and links to projects
 .portfolio {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -239,7 +231,6 @@ footer {
     a:hover {
         color: $tres-background !important;
         border: none;
-        // border-bottom: 3px solid white;
     }
 
     h2 {
@@ -333,7 +324,7 @@ footer {
 
 }
 
-
+// Style each project section
 .project1 {
     height: 100vh;
     width: 100vw;
@@ -403,6 +394,7 @@ footer {
     height: 10px;
 }
 
+// style for tablets
 @media screen and (min-width: 768px) 
 and (max-width: 1024px) {
 
@@ -429,21 +421,18 @@ and (max-width: 1024px) {
     .skills {
         font-family: 'Montserrat', sans-serif;
         width: 100vw;
-        // height: 100vh;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         
         .left {
-            // min-height: 30vh;
             width: 100vw;
             background: $tres-background;
             color: $on-tresbackground;
             
         }
         .right {
-            // min-height: 70vh;
             width: 100vw;
             padding: 20px;
             color: $tres-background;
@@ -497,9 +486,7 @@ and (max-width: 1024px) {
         
          
     }
-// style portfolio page works.html
-
-
+// style portfolio page works.html for tablet
     .portfolio {
         width: 100%;
         height: 100vh;
@@ -525,7 +512,7 @@ and (max-width: 1024px) {
     
     }
     
-    
+    // style projects in works.html for tablet 
     .project1 {
         height: 180vh;
         width: 100vw;
@@ -595,20 +582,24 @@ and (max-width: 1024px) {
 
 }
 
-@media screen and (max-width: 768px) {
+
+// STyle for phone screens
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px) {
     
        .about-me {
-        // height: 150vh;
-        width: 100vw;
         
         img {
            width: 130px;
         }
+
         h2 {
             font-size: 50px;
         }
     
         p {
+            min-height: auto;
             font-size: 14px;
             width: 100%;
         }
