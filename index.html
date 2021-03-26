@@ -14,46 +14,35 @@
   </head>
   <body>
     <header>
-      <!-- starts nav -->
-      <nav
-        class="navbar navbar-expand-lg sticky-top bg-none" style="color: #f9ae65;">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#portfolionav"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+     <!-- starts nav -->
+      <nav>
+      <div class="btn-group bg-none float-right mt-4 pr-3">
+        <button type="button" class="btn btn-none" id="favBtn" data-toggle="dropdown" onclick="fav()" aria-haspopup="true" aria-expanded="false">
+          <i id="favIcon" class="fas fa-bars" style="color: #f9ae65; font-size: 4em;"></i>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="portfolionav"
-        >
-          <ul class="nav">
-            <li class="nav-item display-4">
-              <a class="nav-link pr-4" href="#aboutme">
-                About Me
-              </a>
-            </li>
-            <li class="nav-item display-4">
-              <a class="nav-link pr-4" href="#skills">
-                My Skills
-              </a>
-            </li>
-            <li class="nav-item display-4">
-              <a class="nav-link pr-4" href="#works"> Works </a>
-            </li>
-            <li class="nav-item display-4">
-              <a class="nav-link pr-4" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
+       
+        <div class="dropdown-menu dropdown-menu-center bg-primary border-0">
+          <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#aboutme">About.</a>
+          <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#skills">Skills.</a>
+          <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#works">Works.</a>
+          <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#contact">Contact.</a>
         </div>
-      </nav>
-      <!-- ends nav -->
+      </div>
+     <!-- Script to toogle menu icon -X on display to close it -->
+     <script>
+       function fav() {
+      var icon = document.getElementById("favIcon");
+      if (icon.classList.contains("fa-bars")) {
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-times");
+      } else {
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+      }
+    }
+    </script>
+  </nav>
+  <!-- ends nav -->
 
       <!-- name introduction animation -->
       <div class="animated-name">
