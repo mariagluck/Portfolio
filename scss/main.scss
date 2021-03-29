@@ -21,49 +21,55 @@ $secondary: #b596ac;
 // Custom display style
 $display4-size:  1.7rem;
 
+$viewport_size: (
+    s: 320px,
+    m: 768px,
+    l: 1200px
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+
 * {
-    box-sizing: border-box;
-  }
-  
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
 
 header {
-  width: 100vw;
+  width: 70vw;
   height: 100vh;
   background-color: $primary;
+  
 }
-
-nav {
-    width: 90vw;
-    
-
-    ul {
-        justify-content: right;
-        padding-top: 30px;
-    }
-
-    a {
-        color: $background !important;
-        font-weight: bold;
-    }
-
-    a:hover,  
-    .nav-item:hover {
-        color: $background !important;
-        border-bottom: 3px solid $background;
-    }
-    
-    h1 {
-  color: $primary;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . hamburger-menu"
+      ". mg-name mg-name . social"
+      "balls balls . scroll_arrow .";
   }
-}
+  
+  .social { grid-area: social; }
+  
+  .mg-name { grid-area: mg-name; }
+  
+  .balls { grid-area: balls; }
+  
+  .scroll_arrow { grid-area: scroll_arrow; }
+  
+  .hamburger-menu { grid-area: hamburger-menu; }
+  
 
 // Section about me
 .about-me {
@@ -586,9 +592,11 @@ and (max-width: 1024px) {
 
 // Style for phone screens
 @media only screen 
-  and (min-device-width: 320px) 
   and (max-device-width: 767px) {
     
+        .btn-group {
+            font-size: smaller;
+        }
        .about-me {
         
         img {
@@ -753,3 +761,41 @@ and (max-width: 1024px) {
         }
     }
 }
+
+// /* Style for tablet */
+// @media (min-width: 768px) and (max-width: 801px) {
+//     /* name animation */
+//     .animated-name {
+//       height: 40vh;
+//       width: 80vw;
+//       left: 50%;
+//       position: absolute;
+//       top: 50%;
+//       transform: translate(-50%, -50%);  
+//     }
+//     .web-dev {
+//       font-size: 3.2em !important;
+//     }
+//     }
+//     .animated-name > div {
+//       height: 50%;
+//       overflow: hidden;
+//       position: absolute;
+//       width: 70%;
+//     }
+    
+//     .animated-name .name {
+//       font-size: 4em;
+//       padding: 5px;
+//       position: absolute;
+//       border-bottom: 6px solid #f9ae65;
+//       top: 0;
+//     }
+    
+//     /* Pause animation scale for tablets */
+//     .zoom:hover {
+//       transform: scale(1.5); 
+//       animation-play-state: paused;
+//     }
+  
+//   } 

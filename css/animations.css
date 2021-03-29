@@ -169,37 +169,38 @@ header .fa-arrow-down:hover {
 @media screen and (min-width: 768px) 
 and (max-width: 1024px) {
   /* name animation */
-  .animated-name {
-    color: #f9ae65;
-    font-family:  'Montserrat', sans-serif;
-    font-size: 1.6em;
-    left: 50%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);  
-  }
-
-  .animated-name .name {
-    font-size: 4em;
-    padding: 5px;
-    position: absolute;
-    border-bottom: 6px solid #f9ae65;
-    top: 0;
-  }
-
-  .animated-name .web-dev {
-    font-size: 3em;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-  }
-  /* Pause animation scale for tablets */
-  .zoom:hover {
-    transform: scale(1.5); 
-    animation-play-state: paused;
-  }
-
-} 
+     .animated-name {              
+      height: 40vh;              
+      width: 80vw;              
+      left: 50%;              
+      position: absolute;              
+      top: 50%;
+      transform: translate(-50%, -50%);  
+      }
+      .web-dev {
+        font-size: 3.2em !important;
+      }
+      }
+      .animated-name > div {
+        height: 50%;
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+       
+      .animated-name .name {
+        font-size: 4em;
+        padding: 5px;
+        position: absolute;
+        border-bottom: 6px solid #f9ae65;
+        top: 0;
+      }
+   
+      /* Pause animation scale for tablets */
+      .zoom:hover {
+        transform: scale(1.5); 
+        animation-play-state: paused;
+      } 
+   } 
 
 /* style for phones */
 @media screen and (max-width: 768px) {
@@ -237,4 +238,3 @@ and (max-width: 1024px) {
   }
 
 } 
-

@@ -14,14 +14,17 @@
   </head>
   <body>
     <header>
-     <!-- starts nav -->
-      <nav>
-      <div class="btn-group bg-none float-right mt-4 pr-3">
-        <button type="button" class="btn btn-none" id="favBtn" data-toggle="dropdown" onclick="fav()" aria-haspopup="true" aria-expanded="false">
-          <i id="favIcon" class="fas fa-bars" style="color: #f9ae65; font-size: 4em;"></i>
+
+      <div class="grid-container">
+        <div class="hamburger-menu">
+            <!-- starts nav -->    
+            <nav>
+      <div class="btn-group bg-none float-right mt-4 pr-3 mr-4">
+        <button type="button" class="btn btn-none mr-4" id="favBtn" data-toggle="dropdown" onclick="fav()" aria-haspopup="true" aria-expanded="false">
+          <i id="favIcon" class="fas fa-bars" style="color: #f9ae65; font-size: 3em;"></i>
         </button>
        
-        <div class="dropdown-menu dropdown-menu-center bg-primary border-0">
+        <div class="dropdown-menu dropdown-menu-center bg-transparent border-0 mr-4">
           <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#aboutme">About.</a>
           <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#skills">Skills.</a>
           <a class="dropdown-item bg-transparent border-0 display-4 font-weight-bold pl-0 pt-4" style="color: #f9ae65;" href="#works">Works.</a>
@@ -41,10 +44,25 @@
       }
     }
     </script>
+<!-- <div class="socialmedia">
+<ul class="list-group float-center mt-4">
+  <li class="list-group-item bg-transparent border-0"><i class="fab fa-github"></i></li>
+  <li class="list-group-item bg-transparent border-0"><i class="fab fa-linkedin-in"></i></li>
+</ul>
+</div> -->
   </nav>
   <!-- ends nav -->
-
-      <!-- name introduction animation -->
+        </div>
+        <div class="social">
+          <ul class="list-group float-center mt-4">
+            <li class="list-group-item bg-transparent border-0"><i class="fab fa-github"></i></li>
+            <li class="list-group-item bg-transparent border-0"><i class="fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      
+       
+        <div class="mg-name">
+          <!-- name introduction animation -->
       <div class="animated-name">
         <div class="name">
           <div>
@@ -57,14 +75,27 @@
           <div>Web Developer</div>
         </div>
       </div>
-      <!-- balls animation -->
+        </div>
+      </div>
+
+     <div class="balls">
+           <!-- balls animation -->
       <div class="ball"></div>
       <div class="ball2"></div>
+        </div>
 
+
+        <div class="scroll_arrow">
       <!-- arrow scroll-down -->
-      <div class="arrow bounce">
+           <div class="arrow bounce">
         <a class="fa fa-arrow-down fa-2x" style="color: #f9ae65;" href="#aboutme"></a>
       </div>
+        </div>
+
+      
+     
+
+     
     </header>
 
     <main>
@@ -107,37 +138,37 @@
             <div class="card-deck">
                 <div class="card bg-transparent border-0">
                     <i class="far fa-object-group display-3 pb-4"></i>
-                  <div class="card-body">
+                  <div class="card-body mb-4">
                     <h5 class="card-title ui">UI / UX</h5>
                     <hr style="width:50%" size="1" color=white">
                     <p class="card-text mt-3 p-4">Adobe XD</p>
                     <p class="card-text mt-3 p-4">Figma</p>
                     <p class="card-text mt-3 p-4">Wordpress</p>
-                    <p class="card-text mt-3 p-4">Shopify</p>
+                    <p class="card-text mt-3 mb-4 p-4">Shopify</p>
                   </div>
                 </div>
 
                 <div class="card bg-transparent border-0">
                     <i class="fas fa-code display-3 pb-4"></i>
-                  <div class="card-body">
+                  <div class="card-body mb-4">
                     <h5 class="card-title">WEB DEVELOPMENT</h5>
                     <hr style="width:50%" size="1" color=white">
                     <p class="card-text mt-3 p-4">Html</p>
                     <p class="card-text mt-3 p-4">CSS</p>
                     <p class="card-text mt-3 p-4">SCSS</p>
-                    <p class="card-text mt-3 p-4">BOOTSTRAP</p>
+                    <p class="card-text mt-3 mb-4 p-4">BOOTSTRAP</p>
                   </div>
                 </div>
 
                 <div class="card bg-transparent border-0">
                     <i class="fas fa-palette display-3 pb-4"></i>
-                  <div class="card-body">
+                  <div class="card-body mb-4">
                     <h5 class="card-title">PRODUCT DESIGN</h5>
                     <hr style="width:50%" size="1" color=white">
                     <p class="card-text mt-3 p-4">Photoshop</p>
                     <p class="card-text mt-3 p-4">Illustrator</p>
                     <p class="card-text mt-3 p-4">Indesign</p>
-                    <p class="card-text mt-3 p-4">Animations</p>
+                    <p class="card-text mt-3 mb-4 p-4">Animations</p>
                   </div>
                 </div>
               </div>
