@@ -1,28 +1,26 @@
-// // // define all UI variable
-// const navToggler = document.querySelector('.nav-toggler');
-// const navMenu = document.querySelector('.site-navbar ul');
-// const navLinks = document.querySelectorAll('.site-navbar a');
 
-// // load all event listners
-// allEventListners();
+// const menu = document.querySelector(".main_nav");
+// const menuItems = document.querySelectorAll(".menuItem");
+// const hamburger= document.querySelector(".hamburger");
+// const closeIcon= document.querySelector(".closeIcon");
+// const menuIcon = document.querySelector(".menuIcon");
 
-// // functions of all event listners
-// function allEventListners() {
-//   // toggler icon click event
-//   navToggler.addEventListener('click', togglerClick);
-//   // nav links click event
-//   navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-// }
-
-// // togglerClick function
-// function togglerClick() {
-//   navToggler.classList.toggle('toggler-open');
-//   navMenu.classList.toggle('open');
-// }
-
-// // navLinkClick function
-// function navLinkClick() {
-//   if(navMenu.classList.contains('open')) {
-//     navToggler.click();
+// function toggleMenu() {
+//   if (menu.classList.contains("showMenu")) {
+//     menu.classList.remove("showMenu");
+//     closeIcon.style.display = "none";
+//     menuIcon.style.display = "block";
+//   } else {
+//     menu.classList.add("showMenu");
+//     closeIcon.style.display = "block";
+//     menuIcon.style.display = "none";
 //   }
 // }
+
+// hamburger.addEventListener("click", toggleMenu);
+
+// menuItems.forEach( 
+//   function(menuItem) { 
+//     menuItem.addEventListener("click", toggleMenu);
+//   }
+// );
