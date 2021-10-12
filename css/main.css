@@ -695,13 +695,6 @@ Portfolio Section
     text-align: center;
   }
 
-#works h3  {
-    padding-top: 10px;
-    font-size: 1.5em;
-    font-weight: 300;
-    text-align: center;
-    color: #3c6d79;
-  }
 .myworks {
     background: #f9ae65;
     color: #3c6d79;
@@ -796,11 +789,7 @@ Portfolio Section
    justify-content: space-around;
    align-items: center;
   }
-  @media only screen and (max-width: 766px) {
-    #works h3  {
-      display: none;
-    }
-  }
+ 
 /* ************
 Contact Section
 **************** */
