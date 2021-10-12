@@ -780,6 +780,8 @@ Portfolio Section
   .workItem i {
     margin-left: 0;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   .btnSection {
    width: 300px;
