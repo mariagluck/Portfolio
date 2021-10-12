@@ -796,8 +796,11 @@ Portfolio Section
    justify-content: space-around;
    align-items: center;
   }
- 
-
+  @media only screen and (max-width: 766px) {
+    #works h3  {
+      display: none;
+    }
+  }
 /* ************
 Contact Section
 **************** */
