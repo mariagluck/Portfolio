@@ -27,10 +27,10 @@ Balls  animations
 .ball {
   height: 150px;
   width: 150px;
-  background-color: #7474bf;
+  background-color: #da5f4f;
   animation: pulse 3s ease infinite alternate,
     nudge 5s linear infinite alternate;
-  /* animation-delay: 0.5s; */
+  animation-delay: 0s;
   border-radius: 100%;
   position: absolute;
   top: 65%;
@@ -40,10 +40,10 @@ Balls  animations
 .ball2 {
   height: 100px;
   width: 100px;
-  background-color: #5f2c82;
+  background-color: #f55f4b;
   animation: pulse 3s ease infinite alternate,
     nudge 5s linear infinite alternate;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   border-radius: 100%;
   position: absolute;
   top: 65%;
@@ -309,8 +309,8 @@ header {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: #5f2c82;
-  background: linear-gradient(to left, #49a09d, #5f2c82);
+  background: #da5f4f;
+  background: linear-gradient(to left, #49a09d, #da5f4f);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 }
 .title {
@@ -679,12 +679,13 @@ Skills Section
 /* ************** 
 Portfolio Section
 ******************* */
+
 .works {
     width: 100vw;
     /* height: 100vh; */
     margin: 0;
     padding: 0;
-    background: #3c6d79;
+    background: #457f8d;
     color: #f9ae65;
   }
 #works h1 {
@@ -820,8 +821,8 @@ Footer
 ***** */
 footer {
   min-height: 100px;
-  background: #5f2c82;
-  background: linear-gradient(to left, #49a09d, #5f2c82);
+  background: #da5f4f;
+  background: linear-gradient(to left, #49a09d, #da5f4f);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
