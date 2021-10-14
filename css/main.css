@@ -311,7 +311,7 @@ header {
   height: 100vh;
   background: #da5f4f;
   background: linear-gradient(to left, #49a09d, #da5f4f);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 ); */
 }
 .title {
   align-self: center;
@@ -685,8 +685,11 @@ Portfolio Section
     /* height: 100vh; */
     margin: 0;
     padding: 0;
-    background: #457f8d;
-    color: #f9ae65;
+    /* background: #457f8d;
+    color: #f9ae65; */
+    /* background: #da5f4f; */
+    background: linear-gradient(to bottom, #49a09d, #da5f4f);
+    color: black;
   }
 #works h1 {
     padding-top: 100px;
@@ -696,8 +699,8 @@ Portfolio Section
   }
 
 .myworks {
-    background: #f9ae65;
-    color: #3c6d79;
+    background: white;
+    color: black;
     height: 22vh;
 }
 
@@ -714,6 +717,7 @@ Portfolio Section
 
 #works p {
   text-transform: Uppercase;
+  letter-spacing: 5px;
   margin: 30px;
   font-size: 1.2em;
   color: #ffffff;
@@ -728,7 +732,7 @@ Portfolio Section
 }
 
 #works a {
-    color: #f9ae65;
+    color: #000000;
     text-decoration: none;
 }
 
