@@ -813,9 +813,10 @@ Contact Section
     text-align: center;
     font-size: 1em;
 }
-.margin {
+.form {
   width: 300px;
   margin: auto;
+  margin-top: 50px;
 }
 
 *:focus {
