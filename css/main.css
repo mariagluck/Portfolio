@@ -813,6 +813,119 @@ Contact Section
     text-align: center;
     font-size: 1em;
 }
+.margin {
+  width: 300px;
+  margin: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+.inputGroup {
+  position: relative;
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  display: block;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  left: 25px;
+  padding: 5px;
+  background: none;
+  color: rgb(63, 60, 60);
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  top: -20px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+.inputGroup input:focus ~ .inputBar:before,
+.inputGroup input:focus ~ .inputBar:after,
+.inputGroup textarea:focus ~ .inputBar:before,
+.inputGroup textarea:focus ~ .inputBar:after {
+  width: 50%;
+}
+
+.inputGroup textarea {
+  height: 100px;
+  width: 280px;
+  overflow: auto;
+  resize: none;
+}
+
+.inputGroup .inputBar {
+  position: relative;
+  display: block;
+  width: 290px;
+}
+
+.inputGroup .inputBar:before,
+.inputGroup .inputBar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  background: white;
+  height: 2px;
+  transition: all 0.2s ease;
+}
+
+.inputGroup .inputBar:after {
+  right: 50%;
+}
+
+.inputGroup .inputBar:before {
+  left: 50%;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px 0;
+  margin: 0;
+  width: 290px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 5px;
+  border-bottom: 0 6px #a1a1a1;
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px #a1a1a1;
+  top: 2px;
+}
+
+button:active {
+  top: 6px;
+  box-shadow: 0 0;
+}
+
 
 /* *****
 Footer 
